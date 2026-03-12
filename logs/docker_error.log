@@ -1,0 +1,3 @@
+Back-off restarting failed container
+CrashLoopBackOff
+Container failed to start due to configuration error
