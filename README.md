@@ -54,7 +54,6 @@ LLM API
 ▼
 Root Cause + Suggested Fix
 
-
 ---
 
 ## 🛠 Tech Stack
@@ -68,8 +67,6 @@ Root Cause + Suggested Fix
 
 ## 📂 Project Structure
 
-
-
 ai-log-analyzer/
 │
 ├── main.py
@@ -81,7 +78,6 @@ ai-log-analyzer/
 ├── java_error.log
 ├── python_error.log
 └── docker_error.log
-
 
 ---
 
@@ -101,34 +97,16 @@ export ANTHROPIC_API_KEY="your_api_key"
 🎯 Use Cases
 
 Production incident triage
-
 Developer debugging workflows
-
 Support engineering investigations
-
 AI-assisted observability tooling
 
 📈 Future Improvements
 
 Real-time log ingestion
-
 Kubernetes log integration
-
 Web dashboard UI
-
 Alerting / Slack integration
-
 Vector search for semantic log similarity
 
-👩‍💻 Author
-
-Mansi Somani
-
 ---
-
-## ✅ Now Immediately Run
-
-```bash
-git add README.md
-git commit -m "Improve README – Observability positioning"
-git push
