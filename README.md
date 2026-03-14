@@ -1,74 +1,134 @@
-# AI Log Analyzer (Hybrid Local + LLM Error Diagnosis)
+# AI Log Analyzer (Hybrid AI Incident Triage Tool)
 
-An intelligent log analysis system that combines fast local error detection with LLM-powered root cause analysis to help developers quickly understand and resolve failures.
+AI Log Analyzer is a lightweight observability utility that helps engineers quickly diagnose application failures by combining **fast local log pattern detection** with **AI-powered root cause explanations**.
 
-## 🚀 Overview
+This project demonstrates how AI can augment incident triage workflows in modern cloud environments.
 
-Modern applications generate large volumes of logs, making debugging time-consuming and inefficient.
-This project introduces a hybrid approach to that:
+---
 
-* Detects known error patterns using local rule-based parsing
-* Uses an LLM to explain unknown or complex errors
-* Provides structured, human-readable diagnostics
-* Enables faster debugging workflows for developers and support engineers
+## 🚀 Problem
+
+In distributed systems, engineers often spend significant time analyzing logs during production incidents.
+
+Challenges include:
+- Large volume of unstructured logs
+- Unknown or unfamiliar error patterns
+- Slow manual debugging cycles
+- Delayed incident resolution
+
+Traditional rule-based systems help detect known failures but cannot reason about new issues.
+
+---
+
+## ✅ Solution
+
+AI Log Analyzer uses a **hybrid architecture**:
+
+1. Detects known failures locally using rule-based parsing  
+2. Invokes an LLM only for unfamiliar errors  
+3. Generates human-readable root cause explanations  
+4. Suggests potential fixes  
+
+This approach enables:
+
+- ⚡ Fast triage for common issues  
+- 🤖 Intelligent reasoning for unknown failures  
+- 💰 Reduced AI cost through selective invocation  
+
+---
 
 ## 🧠 Architecture
 
-Hybrid pipeline:
+Log Input
+│
+▼
+Local Rule Engine (error_rules.py)
+│
+├── Known Error → Structured explanation
+│
+└── Unknown Error
+│
+▼
+LLM API
+│
+▼
+Root Cause + Suggested Fix
 
-1. Log ingestion
-2. Local pattern detection (regex-based)
-3. Error classification
-4. LLM-based explanation generation
-5. Structured output
 
-This approach ensures:
-
-* ⚡ Low latency for known errors
-* 🤖 Intelligent reasoning for new failures
-* 💰 Reduced LLM cost via selective invocation
+---
 
 ## 🛠 Tech Stack
 
-* Python
-* Regex pattern engine
-* OpenAI / Claude API (LLM reasoning)
-* CLI interface
+- Python
+- Regex / rule-based parsing
+- Claude LLM API
+- CLI-based workflow
+
+---
 
 ## 📂 Project Structure
 
-```
-logs/               # Sample log files  
-patterns/           # Known error patterns  
-analyzer.py         # Main execution pipeline  
-llm_explainer.py    # LLM integration  
-utils.py            # Helper utilities  
-```
 
-## ▶️ How to Run
+
+ai-log-analyzer/
+│
+├── main.py
+├── error_rules.py
+├── requirements.txt
+├── README.md
+│
+└── logs/
+├── java_error.log
+├── python_error.log
+└── docker_error.log
+
+
+---
+
+## ▶️ Run Locally
 
 ```bash
-git clone <repo>
-cd ai-log-analyzer
+git clone https://github.com/msomani25/ai-log-explainer.git
+cd ai-log-explainer
+python3 -m venv venv
+source venv/bin/activate
 pip install -r requirements.txt
-python analyzer.py logs/sample.log
-```
+python main.py
 
-## 📈 Future Improvements
+🔑 Optional AI Setup
+export ANTHROPIC_API_KEY="your_api_key"
 
-* Add vector database for semantic log search
-* Web UI dashboard
-* Real-time log streaming support
-* Kubernetes log ingestion
-* Observability tool integrations
+🎯 Use Cases
 
-## 🎯 Use Cases
+Production incident triage
 
-* Developer debugging
-* Production incident triage
-* Support engineering workflows
-* AI-assisted observability tooling
+Developer debugging workflows
 
-## 🤝 Contributions
+Support engineering investigations
 
-Open to suggestions and improvements.
+AI-assisted observability tooling
+
+📈 Future Improvements
+
+Real-time log ingestion
+
+Kubernetes log integration
+
+Web dashboard UI
+
+Alerting / Slack integration
+
+Vector search for semantic log similarity
+
+👩‍💻 Author
+
+Mansi Somani
+
+---
+
+## ✅ Now Immediately Run
+
+```bash
+git add README.md
+git commit -m "Improve README – Observability positioning"
+git push
