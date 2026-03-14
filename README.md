@@ -10,13 +10,14 @@ This project demonstrates how AI can augment incident triage workflows in modern
 
 In distributed systems, engineers often spend significant time analyzing logs during production incidents.
 
-Challenges include:
-- Large volume of unstructured logs
-- Unknown or unfamiliar error patterns
-- Slow manual debugging cycles
-- Delayed incident resolution
+Common challenges include:
 
-Traditional rule-based systems help detect known failures but cannot reason about new issues.
+- Large volumes of unstructured logs  
+- Unknown or unfamiliar error patterns  
+- Slow manual debugging cycles  
+- Delayed incident resolution  
+
+Traditional rule-based systems help detect known failures but struggle with new or complex issues.
 
 ---
 
@@ -24,12 +25,12 @@ Traditional rule-based systems help detect known failures but cannot reason abou
 
 AI Log Analyzer uses a **hybrid architecture**:
 
-1. Detects known failures locally using rule-based parsing  
-2. Invokes an LLM only for unfamiliar errors  
-3. Generates human-readable root cause explanations  
-4. Suggests potential fixes  
+1. Detect known failures locally using rule-based parsing  
+2. Invoke an LLM only for unfamiliar errors  
+3. Generate human-readable root cause explanations  
+4. Suggest potential fixes  
 
-This approach enables:
+This enables:
 
 - ⚡ Fast triage for common issues  
 - 🤖 Intelligent reasoning for unknown failures  
@@ -44,12 +45,12 @@ Log Input
 ▼
 Local Rule Engine (error_rules.py)
 │
-├── Known Error → Structured explanation
+├── Known Error → Structured Explanation
 │
 └── Unknown Error
 │
 ▼
-LLM API
+LLM API (Claude)
 │
 ▼
 Root Cause + Suggested Fix
@@ -58,16 +59,16 @@ Root Cause + Suggested Fix
 
 ## 🛠 Tech Stack
 
-- Python
-- Regex / rule-based parsing
-- Claude LLM API
-- CLI-based workflow
+- Python  
+- Regex / rule-based parsing  
+- Claude LLM API  
+- CLI interface  
 
 ---
 
 ## 📂 Project Structure
 
-ai-log-analyzer/
+ai-log-explainer/
 │
 ├── main.py
 ├── error_rules.py
@@ -91,26 +92,3 @@ source venv/bin/activate
 pip install -r requirements.txt
 python main.py
 
-## 🔑 Optional AI Setup
-export ANTHROPIC_API_KEY="your_api_key"
-
----
-
-## 🎯 Use Cases
-
-Production incident triage
-Developer debugging workflows
-Support engineering investigations
-AI-assisted observability tooling
-
----
-
-## 📈 Future Improvements
-
-Real-time log ingestion
-Kubernetes log integration
-Web dashboard UI
-Alerting / Slack integration
-Vector search for semantic log similarity
-
----
