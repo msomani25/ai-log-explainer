@@ -94,12 +94,16 @@ python main.py
 🔑 Optional AI Setup
 export ANTHROPIC_API_KEY="your_api_key"
 
+---
+
 🎯 Use Cases
 
 Production incident triage
 Developer debugging workflows
 Support engineering investigations
 AI-assisted observability tooling
+
+---
 
 📈 Future Improvements
 
