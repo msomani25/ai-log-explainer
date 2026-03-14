@@ -90,7 +90,7 @@ python main.py
 
 ---
 
-## 🔑 Optional AI Setup
+## 🔑 **Optional AI Setup**
 
 ```bash
 export ANTHROPIC_API_KEY="your_api_key_here"
