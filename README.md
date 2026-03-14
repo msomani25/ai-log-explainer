@@ -41,18 +41,16 @@ This enables:
 ## 🧠 Architecture
 
 Log Input
-│
-▼
-Local Rule Engine (error_rules.py)
-│
-├── Known Error → Structured Explanation
-│
-└── Unknown Error
-│
-▼
-LLM API (Claude)
-│
-▼
+   │
+   ▼
+Local Rule Engine (`error_rules.py`)
+   ├── Known Error → Structured Explanation
+   └── Unknown Error
+        │
+        ▼
+     LLM API (Claude)
+        │
+        ▼
 Root Cause + Suggested Fix
 
 ---
@@ -69,16 +67,14 @@ Root Cause + Suggested Fix
 ## 📂 Project Structure
 
 ai-log-explainer/
-│
 ├── main.py
 ├── error_rules.py
 ├── requirements.txt
 ├── README.md
-│
 └── logs/
-├── java_error.log
-├── python_error.log
-└── docker_error.log
+    ├── java_error.log
+    ├── python_error.log
+    └── docker_error.log
 
 ---
 
@@ -92,20 +88,28 @@ source venv/bin/activate
 pip install -r requirements.txt
 python main.py
 
-🔑 Optional AI Setup
+---
+
+🔑 **Optional AI Setup**
+
 ```bash
 export ANTHROPIC_API_KEY="your_api_key_here"
 
-🎯 Use Cases
+---
 
-Production incident triage
-Developer debugging workflows
-Support engineering investigations
-AI-assisted observability tooling
+🎯 **Use Cases**
 
-📈 Future Improvements
-Real-time log ingestion
-Kubernetes log integration
-Web dashboard UI
-Slack / alert integrations
-Vector search for semantic log similarity
+- Production incident triage
+- Developer debugging workflows
+- Support engineering investigations
+- AI-assisted observability tooling
+
+---
+
+📈 **Future Improvements**
+
+- Real-time log ingestion
+- Kubernetes log integration
+- Web dashboard UI
+- Slack / alert integrations
+- Vector search for semantic log similarity
