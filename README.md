@@ -92,3 +92,20 @@ source venv/bin/activate
 pip install -r requirements.txt
 python main.py
 
+🔑 Optional AI Setup
+```bash
+export ANTHROPIC_API_KEY="your_api_key_here"
+
+🎯 Use Cases
+
+Production incident triage
+Developer debugging workflows
+Support engineering investigations
+AI-assisted observability tooling
+
+📈 Future Improvements
+Real-time log ingestion
+Kubernetes log integration
+Web dashboard UI
+Slack / alert integrations
+Vector search for semantic log similarity
