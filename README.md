@@ -88,9 +88,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 python main.py
 
-🔑 **Optional AI Setup**
-
-```bash
+🔑 Optional AI Setup
 export ANTHROPIC_API_KEY="your_api_key_here"
 
 🎯 Use Cases
