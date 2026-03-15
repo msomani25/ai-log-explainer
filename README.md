@@ -61,10 +61,10 @@ Root Cause + Suggested Fix
 
 ## 🛠️ Tech Stack
 
-**Language:** Python
-**Parsing:** Regex / rule-based engine
-**AI Model:** Claude (Anthropic API)
-**Interface:** CLI
+**Language:** Python\
+**Parsing:** Regex / rule-based engine\
+**AI Model:** Claude (Anthropic API)\
+**Interface:** CLI\
 
 ---
 
