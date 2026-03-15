@@ -6,7 +6,7 @@ AI Log Analyzer helps engineers quickly diagnose application failures during pro
 
 ---
 
-## 🚀 Problem
+# 🚀 Problem
 
 In distributed systems, engineers often spend significant time analyzing logs during incidents.
 
@@ -21,7 +21,7 @@ Traditional rule-based systems help detect known failures but struggle with new 
 
 ---
 
-## ✅ Solution
+# ✅ Solution
 
 AI Log Analyzer uses a **hybrid architecture** that combines rule-based speed with LLM intelligence:
 
@@ -40,7 +40,7 @@ AI Log Analyzer uses a **hybrid architecture** that combines rule-based speed wi
 
 ---
 
-## 🧠 Architecture
+# 🧠 Architecture
 Log Input
 │
 ▼
@@ -53,10 +53,10 @@ LLM API (Claude)
 │
 ▼
 Root Cause + Suggested Fix
-Copy
+
 ---
 
-## 🛠️ Tech Stack
+# 🛠️ Tech Stack
 
 - **Language:** Python
 - **Parsing:** Regex / rule-based engine
@@ -65,7 +65,7 @@ Copy
 
 ---
 
-## 📂 Project Structure
+# 📂 Project Structure
 ai-log-explainer/
 ├── main.py               # Entry point and CLI logic
 ├── error_rules.py        # Rule-based log pattern matching
@@ -75,32 +75,10 @@ ai-log-explainer/
 ├── java_error.log
 ├── python_error.log
 └── docker_error.log
-Copy
+
 ---
 
-## ▶️ Run Locally
-
-**1. Clone the repository**
-
-```bash
-git clone https://github.com/msomani25/ai-log-explainer.git
-cd ai-log-explainer
-2. Set up a virtual environment
-bashCopypython3 -m venv venv
-source venv/bin/activate        # On Windows: venv\Scripts\activate
-3. Install dependencies
-bashCopypip install -r requirements.txt
-4. Run the tool
-bashCopypython main.py
-
-🔑 AI Setup (Optional)
-To enable LLM-powered analysis for unknown errors, add your Anthropic API key:
-bashCopyexport ANTHROPIC_API_KEY="your_api_key_here"
-
-Without an API key, the tool will still work for known error patterns using the local rule engine.
-
-
-🎯 Use Cases
+# 🎯 Use Cases
 
 🔥 Production incident triage
 🐛 Developer debugging workflows
@@ -108,7 +86,7 @@ Without an API key, the tool will still work for known error patterns using the 
 📡 AI-assisted observability tooling
 
 
-📈 Future Improvements
+# 📈 Future Improvements
 
  Real-time log ingestion
  Kubernetes log integration
