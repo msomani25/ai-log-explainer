@@ -25,10 +25,10 @@ Traditional rule-based systems help detect known failures but struggle with new 
 
 AI Log Analyzer uses a **hybrid architecture** that combines rule-based speed with LLM intelligence:
 
-1. Detect known failures locally using rule-based parsing
-2. Invoke an LLM only for unfamiliar errors
-3. Generate human-readable root cause explanations
-4. Suggest potential fixes
+- Detect known failures locally using rule-based parsing
+- Invoke an LLM only for unfamiliar errors
+- Generate human-readable root cause explanations
+- Suggest potential fixes
 
 **Benefits:**
 
@@ -141,12 +141,8 @@ Without an API key, the tool will still work for known error patterns using the 
 
 ## 📈 Future Improvements
 
-Real-time log ingestion
-
-Kubernetes log integration
-
-Web dashboard UI
-
-Slack / alerting integrations
-
-Vector search for semantic log similarity
+- Real-time log ingestion
+- Kubernetes log integration
+- Web dashboard UI
+- Slack / alerting integrations
+- Vector search for semantic log similarity
