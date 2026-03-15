@@ -55,11 +55,87 @@ Local Rule Engine (`error_rules.py`)
       │
       ▼
 Root Cause + Suggested Fix
-text```
+```
+
+---
 
 ## 🛠️ Tech Stack
 
-Language: Python
-Parsing: Regex / rule-based engine
-AI Model: Claude (Anthropic API)
-Interface: CLI
+**Language:** Python
+**Parsing:** Regex / rule-based engine
+**AI Model:** Claude (Anthropic API)
+**Interface:** CLI
+
+---
+
+## 📂 Project Structure
+
+```text
+ai-log-explainer/
+  ├── main.py
+  ├── error_rules.py
+  ├── requirements.txt
+  ├── README.md
+  └── logs/
+      ├── java_error.log
+      ├── python_error.log
+      └── docker_error.log
+```
+---
+
+## ▶️ Run Locally
+
+**1. Clone the repository**
+
+```bash
+git clone https://github.com/msomani25/ai-log-explainer.git
+cd ai-log-explainer
+```
+
+**2. Set up a virtual environment**
+
+```bash
+python3 -m venv venv
+source venv/bin/activate        # On Windows: venv\Scripts\activate
+```
+
+**3. Install dependencies**
+
+```bash
+pip install -r requirements.txt
+```
+
+**4. Run the tool**
+
+```bash
+python main.py
+```
+---
+
+## 🔑 Optional AI Setup
+
+To enable LLM-powered analysis for unknown errors, add your Anthropic API key:
+
+```bash
+export ANTHROPIC_API_KEY="your_api_key_here"
+```
+
+Without an API key, the tool will still work for known error patterns using the local rule engine.
+
+---
+
+## 🎯 Use Cases
+
+🔥 Production incident triage
+🐛 Developer debugging workflows
+🎧 Support engineering investigations
+📡 AI-assisted observability tooling
+
+---
+
+## 📈 Future Improvements
+Real-time log ingestion
+Kubernetes log integration
+Web dashboard UI
+Slack / alerting integrations
+Vector search for semantic log similarity
