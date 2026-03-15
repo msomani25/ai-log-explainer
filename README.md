@@ -62,8 +62,11 @@ Root Cause + Suggested Fix
 ## 🛠️ Tech Stack
 
 **Language:** Python
+
 **Parsing:** Regex / rule-based engine
+
 **AI Model:** Claude (Anthropic API)
+
 **Interface:** CLI
 
 ---
@@ -127,15 +130,23 @@ Without an API key, the tool will still work for known error patterns using the 
 ## 🎯 Use Cases
 
 🔥 Production incident triage
+
 🐛 Developer debugging workflows
+
 🎧 Support engineering investigations
+
 📡 AI-assisted observability tooling
 
 ---
 
 ## 📈 Future Improvements
+
 Real-time log ingestion
+
 Kubernetes log integration
+
 Web dashboard UI
+
 Slack / alerting integrations
+
 Vector search for semantic log similarity
